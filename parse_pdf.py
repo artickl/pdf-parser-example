@@ -6,7 +6,7 @@ import json
 doc = pymupdf.open("out.pdf") 
 jpage = json.loads(doc[0].get_text("json"))
 
-print(json.dumps(jpage, indent=4))
+print(json.dumps(jpage, indent=4)[:500])
 
 #./parse_pdf.py | jq | less
 #./parse_pdf.py | jq '.blocks[10].lines[0].spans[0].text'
