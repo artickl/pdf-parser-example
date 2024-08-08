@@ -1,0 +1,1 @@
+Example of extracting information from PDF files using pymupdf. More details are in the [Jupyter Notebook](pdf-parser-example.ipynb)
